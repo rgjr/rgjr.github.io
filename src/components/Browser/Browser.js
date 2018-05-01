@@ -14,7 +14,7 @@ const getBrowsersArr = () => {
     },
     {
       name: 'firefox',
-      isCurrenBrowser: browserCheck.isFireFox()
+      isCurrenBrowser: browserCheck.isFirefox()
     },
     {
       name: 'safari',
@@ -81,18 +81,18 @@ const shouldRenderForBrowser = (props, browsers) => {
   } else {
     return false;
   }
+};
 
-  const Browser = props => {
-    const { children } = props;
-    const browsers = getBrowsersArr();
-    const shouldRender = shouldRenderForBrowser(props, browser);
+const Browser = props => {
+  const { children } = props;
+  const browsers = getBrowsersArr();
+  const shouldRender = shouldRenderForBrowser(props, browsers);
 
-    if (shouldRender) {
-      return <div className="browser">{children}</div>;
-    } else {
-      return null;
-    }
-  };
+  if (shouldRender) {
+    return <div className="browser">{children}</div>;
+  } else {
+    return null;
+  }
 };
 
 Browser.propTypes = {

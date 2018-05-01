@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { toElement as scrollToElement } from '@utils/scroll';
+import { toElement as scrollToElement } from '../../utils/scroll';
 import './style.scss';
 
 class ScrollToNext extends Component {
@@ -27,11 +27,11 @@ class ScrollToNext extends Component {
   }
 }
 
-scrollToNext.propTypes = {
+ScrollToNext.propTypes = {
   pageSelector: PropTypes.string
 };
 
-scrollToNext.contextTypes = {
+ScrollToNext.contextTypes = {
   theme: PropTypes.any
 };
 
