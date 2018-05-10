@@ -29,7 +29,9 @@ const Footer = (props, context) => {
           >
             Dinesh Pandiyan's
           </a>
+          {' '}
           dev-landing-page
+          {' '}
           <span role="img" aria-label="heart">
             ❤️
           </span>
